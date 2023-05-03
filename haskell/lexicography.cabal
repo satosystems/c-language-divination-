@@ -6,9 +6,9 @@ cabal-version: 1.12
 
 name:           lexicography
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/satosystems/lexicography#readme>
-homepage:       https://github.com/satosystems/lexicography#readme
-bug-reports:    https://github.com/satosystems/lexicography/issues
+description:    Please see the README on GitHub at <https://github.com/satosystems/c-language-divination/haskell#readme>
+homepage:       https://github.com/satosystems/c-language-divination#readme
+bug-reports:    https://github.com/satosystems/c-language-divination/issues
 author:         Satoshi Ogata
 maintainer:     satosystems@gmail.com
 copyright:      (c) 2023 Satoshi Ogata
@@ -21,7 +21,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/satosystems/lexicography
+  location: https://github.com/satosystems/c-language-divination
 
 library
   exposed-modules:
@@ -35,25 +35,12 @@ library
       base >=4.7 && <5
   default-language: Haskell2010
 
-executable lexicography-exe
+executable lexicography
   main-is: Main.hs
   other-modules:
       Paths_lexicography
   hs-source-dirs:
       app
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      base >=4.7 && <5
-    , lexicography
-  default-language: Haskell2010
-
-test-suite lexicography-test
-  type: exitcode-stdio-1.0
-  main-is: Spec.hs
-  other-modules:
-      Paths_lexicography
-  hs-source-dirs:
-      test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
