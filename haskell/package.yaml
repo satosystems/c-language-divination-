@@ -14,6 +14,12 @@ description: Please see the README on GitHub at <https://github.com/satosystems/
 
 dependencies:
   - base >= 4.7 && < 5
+  - directory
+  - html-conduit
+  - http-conduit
+  - string-conversions
+  - text
+  - xml-conduit
 
 ghc-options:
   - -Wall
